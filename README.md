@@ -29,6 +29,8 @@ Néanmoins, cette architecture, comme toute autre possède quelques inconvénien
 * L'architecture entraîne généralement une consommation de mémoire accrue
 * Les développeurs doivent mettre des efforts supplémentaires dans la mise en œuvre du mécanisme de communication entre les services
 
+### Architecture Microservices
+
 Ci-desous l'architecture de l'application en termes de services:
 
 ![Services Architecture](https://github.com/MahametH/Docs-Converter/blob/master/img/DocConverterArchitecture1.0.PNG)
@@ -41,11 +43,11 @@ Ci-desous l'architecture de l'application en termes de services:
 * **Delete Service:** pour la suppression de fichiers
 * **Email Service:** pour l'envoi des emails
 
-#### Modèle de données
+### Modèle de données
  
 ![Data Model](https://github.com/MahametH/Docs-Converter/blob/master/img/DocConverterModel1.0.png)
 
-#### Technologies choisies pour le developpement
+### Technologies choisies pour le developpement
 
 **Pourquoi SpringBoot et SpringCloud constituent-ils un bon choix pour MicroServices?**
 
