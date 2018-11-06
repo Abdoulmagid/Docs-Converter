@@ -41,4 +41,4 @@ Ci-desous l'architecture de l'application en termes de services:
 * **Delete Service:** pour la suppression de fichiers
 * **Email Service:** pour l'envoi des emails
 
-![Data Model](https://github.com/MahametH/Docs-Converter/blob/master/img/DocConverterModel1.0.PNG)
+![Data Model](https://github.com/MahametH/Docs-Converter/blob/master/img/DocConverterModel1.0.png)
