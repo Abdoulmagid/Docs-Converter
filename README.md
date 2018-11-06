@@ -41,4 +41,30 @@ Ci-desous l'architecture de l'application en termes de services:
 * **Delete Service:** pour la suppression de fichiers
 * **Email Service:** pour l'envoi des emails
 
+#### Modèle de données
+ 
 ![Data Model](https://github.com/MahametH/Docs-Converter/blob/master/img/DocConverterModel1.0.png)
+
+#### Technologies choisies pour le developpement
+
+**Pourquoi SpringBoot et SpringCloud constituent-ils un bon choix pour MicroServices?**
+
+*Spring Boot* est le framework Java le plus populaire et le plus utilisé pour la création de MicroServices. De nos jours, de nombreuses entreprises préfèrent déployer leurs applications dans un environnement cloud plutôt que de prendre elles-mêmes toutes les difficultés à gérer un centre de données. Mais nous devons prendre soin des divers aspects pour rendre nos applications Cloud Native. Voilà la beauté de *Spring Cloud*.
+
+*Spring Cloud* est essentiellement une implémentation de divers modèles de conception à suivre lors de la création d'applications Cloud natives. Au lieu de réinventer la roue, nous pouvons simplement tirer parti des différents modules de Spring Cloud et nous concentrer sur notre principal problème d’activité, au lieu de nous préoccuper des problèmes d’infrastructure.
+
+Voici quelques-uns des modules Spring Cloud pouvant être utilisés pour résoudre les problèmes liés aux applications distribuées:
+
+* *Spring Cloud Config Server:* Pour externaliser la configuration des applications sur un serveur de configuration central avec la possibilité de mettre à jour les valeurs de configuration sans nécessiter de redémarrage des applications. Nous pouvons utiliser *Spring Cloud Config Server* avec *git* ou *Consul* ou *ZooKeeper* en tant que référentiel de configuration.
+
+* *Service Registry and Discovery( ou Registre de service et découverte):* Comme il peut exister de nombreux services et que nous avons besoin de la capacité d’agrandissement ou de réduction dynamique, nous avons besoin d’un mécanisme de registre de service et de découverte afin que la communication service à service ne dépende pas de noms d’hôte et de numéros de port codés en dur. *Spring Cloud* fournit une prise en charge du service de registre et de découverte basée sur *Netflix Eureka* avec une configuration minimale. Nous pouvons également utiliser *Consul* ou *ZooKeeper* pour le Service Registry and Discovery.
+
+* *Circuit Breaker( ou Disjoncteur):* dans l'architecture à base de microservices, un service peut dépendre d'un autre service et si un service tombe en panne, les défaillances peuvent également se répercuter sur d'autres services. Spring Cloud fournit un disjoncteur basé sur *Netflix Hystrix* pour traiter ce type de problèmes.
+
+* *Spring Cloud Data Streams:* ces jours-ci, nous avons peut-être besoin de travailler avec d'énormes volumes de flux de données utilisant *Kafka* ou *Spark*, etc. *Spring Cloud Data Streams* fournit des abstractions de niveau supérieur pour utiliser ces frameworks plus facilement.
+
+* *Spring Cloud Security:* Certains microservices doivent être accessibles uniquement aux utilisateurs authentifiés et nous souhaiterions probablement une fonctionnalité d'authentification unique pour propager le contexte d'authentification entre les services. *Spring Cloud Security* fournit des services d'authentification utilisant *OAuth2*.
+
+* *Distributed Tracing:* l'un des challenges avec les microservices est la capacité de déboguer les problèmes. Une simple action de l'utilisateur final peut déclencher une chaîne d'appels de microservices. Un mécanisme doit permettre de suivre les chaînes d'appels associées. Nous pouvons utiliser *Spring Cloud Sleuth* avec *Zipkin* pour suivre les invocations entre services.
+
+* *Contract Spring Cloud:* il est fort probable que des équipes distinctes travaillent sur différents microservices. Il devrait exister un mécanisme permettant aux équipes de s’entendre sur les contrats de points de terminaison des API afin que chaque équipe puisse développer leurs API de manière indépendante. *Spring Cloud Contract* permet de créer de tels contrats et de les valider à la fois par le fournisseur de services et par le consommateur.
