@@ -31,7 +31,7 @@ Néanmoins, cette architecture, comme toute autre possède quelques inconvénien
 
 Ci-desous l'architecture de l'application en termes de services:
 
-![Services Architecture](https://github.com/Abdoulmagid/Docs-Converter/blob/master/img/DocConverterArchitecture1.0.PNG)
+![Services Architecture](https://github.com/MahametH/Docs-Converter/blob/master/img/DocConverterArchitecture1.0.PNG)
 
 * **Frontend:** represente le frontend de l'application, point d'interaction entre l'utilisateur et toute l'application.
 * **Backend Service:** fournit une API REST pour gérer les démandes de conversion
@@ -41,4 +41,4 @@ Ci-desous l'architecture de l'application en termes de services:
 * **Delete Service:** pour la suppression de fichiers
 * **Email Service:** pour l'envoi des emails
 
-![Data Model](https://github.com/Abdoulmagid/Docs-Converter/blob/master/img/DocConverterModel1.0.PNG)
+![Data Model](https://github.com/MahametH/Docs-Converter/blob/master/img/DocConverterModel1.0.PNG)
