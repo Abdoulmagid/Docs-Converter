@@ -28,3 +28,7 @@ Néanmoins, cette architecture, comme toute autre possède quelques inconvénien
 * Le fractionnement de l'application dans les microservices est tout un art
 * L'architecture entraîne généralement une consommation de mémoire accrue
 * Les développeurs doivent mettre des efforts supplémentaires dans la mise en œuvre du mécanisme de communication entre les services
+
+Ci-desous l'architecture de l'application en termes de services:
+
+![Services Architecture](https://github.com/Abdoulmagid/Docs-Converter/blob/master/DocConverterArchitecture1.0.PNG)
