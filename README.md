@@ -4,15 +4,16 @@
 
 #### Fonctionnement général de l'application : 
 
-* Un client se rend sur la page d'accueil de l'application. Il y dépose son document, choisit les conversions 
-à réaliser parmi celles disponibles et un e-mail de contact (facultatif).
-* Une fois la demande enregistrée, l'application envoie un message (facultativement : un email)
+* Un client se rend sur la page d'accueil de l'application. Il y dépose son document, choisit les conversions à réaliser parmi celles disponibles et un e-mail de contact (facultatif).
+* Une fois la demande enregistrée, l'application envoie un message (facultativement : un email) confirmant que l'opération est en cours et un lien vers une page résumant le statut de chaque conversion : en attente, en cours, terminé. Pour chaque statut, il est important de
+connaître le temps passé dans l'état courant.
+* Lorsqu'un documet est converti, un lien est mis à disposition depuis la page de sattut permettant de le télécharger. L' utilisateur dispose alors de 5 minutes pour le télécharger après quoi le document sera supprimé.
+* Quand le document a été converti, un message (facultativement : un email ) est envoyé à l'utilisateur avec le lien.7
+* Pour chaque utilisateur, il est possible de réaliser seulement 2 conversions à la fois.
 
 ## Partie 1 : Architecture de l' application
 
-L'architecture optée pour developper l'application est celle des microservices qui propose de découper une 
-applicaton en un ensemble de services à composants multiples appelés microservices. Le choix de cette architecture
-est motivé par les multiples avantages que confère cette dernière, à savoir : 
+L'architecture optée pour developper cette application est celle des microservices qui propose de découper une applicaton en un ensemble de services à composants multiples appelés microservices. Le choix de cette architecture est motivé par les multiples avantages que confère cette dernière, à savoir : 
 
 * La liberté offerte au developpeur de développer et de déployer de manière indépendante
 * Un microservice peut être développé par une équipe assez petite
