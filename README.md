@@ -10,9 +10,20 @@
 
 ## Partie 1 : Architecture de l' application
 
-L'architecture optée pour developper l'application repose sur les microservices. Ce choix est motivé d'une part
-par les avantages offerts par cette architecture à savoir : 
-*
-*
-*
-D'autre part, 
+L'architecture optée pour developper l'application est celle des microservices qui propose de découper une 
+applicaton en un ensemble de services à composants multiples appelés microservices. Le choix de cette architecture
+est motivé par les multiples avantages que confère cette dernière, à savoir : 
+
+* La liberté offerte au developpeur de développer et de déployer de manière indépendante
+* Un microservice peut être développé par une équipe assez petite
+* Le code pour différents services peut être écrit dans différentes langues (bien que de nombreux praticiens le découragent)
+* Intégration facile et déploiement automatique (utilisation d'outils d'intégration continue open source tels que Jenkins, Hudson, etc.)
+* Facile à comprendre et à modifier pour les développeurs, peut donc aider un nouveau membre de l'équipe à devenir productif rapidement
+* Les développeurs peuvent utiliser les dernières technologies
+* Le code est organisé autour des capacités commerciales 
+ 
+Néanmoins, cette architecture, comme toute autre possède quelques inconvénients notamment :
+
+* Le fractionnement de l'application dans les microservices est tout un art
+* L'architecture entraîne généralement une consommation de mémoire accrue
+* Les développeurs doivent mettre des efforts supplémentaires dans la mise en œuvre du mécanisme de communication entre les services
