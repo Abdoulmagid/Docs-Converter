@@ -1,8 +1,6 @@
 # Projet Semestriel - Cloud Computing 2018
 
-### Travail demandé : 
-
-#### Développer une application de conversion de documents prête à être déployée sur Cloud.
+### Travail demandé :  Développer une application de conversion de documents prête à être déployée sur Cloud.
 
 #### Fonctionnement général de l'application : 
 
